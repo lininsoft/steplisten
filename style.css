@@ -1,0 +1,628 @@
+/* 基础样式 */
+ /* 基础样式 */
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+/* 头部样式 */
+header {
+    background: linear-gradient(135deg, #1a73e8, #0d47a1);
+    color: white;
+    text-align: center;
+    padding: 0.5rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+header .title-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 4px;
+}
+
+header .logo {
+    width: 40px;
+    height: 40px;
+}
+
+header h1 {
+    margin-top: 0.2rem;
+    font-size: 2.2rem;
+    margin-bottom: 0.2rem;
+}
+
+header h2 {
+    font-size: 1.1rem;
+    font-weight: 300;
+    opacity: 0.9;
+    margin-bottom: 0.3rem;
+}
+
+/* 主要内容区域 */
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+/* Hero 区域 */
+.hero {
+    text-align: center;
+    padding: 2rem 2rem;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+    margin-bottom: 3rem;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    color: #1a73e8;
+}
+
+/* Features Section */
+.features {
+    margin: 2rem 0;
+}
+
+.features h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    color: #1a73e8;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+.feature {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease;
+}
+
+.feature:hover {
+    transform: translateY(-5px);
+}
+
+.feature h3 {
+    color: #1a73e8;
+    margin-bottom: 1rem;
+}
+
+/* 使用场景区域 */
+.use-cases {
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    margin: 3rem 0;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.use-cases ul {
+    list-style-type: none;
+    padding-left: 1rem;
+}
+
+.use-cases li {
+    margin: 1rem 0;
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+.use-cases li:before {
+    content: "✓";
+    color: #1a73e8;
+    position: absolute;
+    left: 0;
+}
+
+/* 故事区域 */
+.story {
+    background: #f0f7ff;
+    padding: 3rem 2rem;
+    border-radius: 8px;
+    margin: 3rem 0;
+    text-align: center;
+}
+
+/* CTA 按钮 */
+.cta-button {
+    display: inline-block;
+    background: #1a73e8;
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 1rem 0;
+    transition: background 0.3s ease;
+}
+
+.cta-button:hover {
+    background: #0d47a1;
+}
+
+/* CTA 区域 */
+.cta {
+    text-align: center;
+    padding: 4rem 2rem;
+    background: white;
+    border-radius: 8px;
+    margin: 3rem 0;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+}
+
+.cta h2 {
+    color: #1a73e8;
+    margin-bottom: 1rem;
+}
+
+/* 添加容器来控制宽度 */
+.cta .download-content {
+    position: relative;
+    width: 400px;  /* 与上面的下载按钮保持一致 */
+    margin: 0 auto;
+}
+
+.cta .cta-button {
+    width: 100%;
+    text-align: center;
+    padding: 1rem 1rem;  /* 这里不需要左侧padding，因为没有logo */
+    position: relative;
+    white-space: nowrap;
+    font-size: 1.1rem;
+}
+
+/* 系统要求区域 */
+.requirements {
+    background: #f5f5f5;
+    padding: 2rem;
+    border-radius: 8px;
+    margin: 3rem 0;
+    text-align: center;
+}
+
+.requirements-links {
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: center;
+}
+
+.requirements .download-content {
+    position: relative;
+    width: 400px;
+}
+
+.doc-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    color: white;
+    background: #1a73e8;
+    text-decoration: none;
+    padding: 1rem 1rem;
+    border: none;
+    border-radius: 25px;
+    font-size: 1.1rem;
+    line-height: 1.2;
+    height: 48px;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 5px rgba(26, 115, 232, 0.2);
+    white-space: nowrap;
+    background: linear-gradient(135deg, #1a73e8, #0d47a1);
+}
+
+.doc-link:hover {
+    background: linear-gradient(135deg, #0d47a1, #1a73e8);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(26, 115, 232, 0.3);
+}
+
+/* 响应式调整 */
+@media (max-width: 768px) {
+    .requirements .download-content {
+        width: 320px;
+    }
+    
+    .doc-link {
+        font-size: 1rem;
+        height: 44px;
+    }
+}
+
+/* 页脚 */
+footer {
+    text-align: center;
+    padding: 2rem;
+    background: #333;
+    color: white;
+    margin-top: 3rem;
+}
+
+.footer-links {
+    margin-top: 1rem;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    margin: 0 1rem;
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+}
+
+footer a:hover {
+    opacity: 1;
+    text-decoration: underline;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    header h2 {
+        font-size: 1.2rem;
+    }
+
+    .hero h1 {
+        font-size: 1.8rem;
+    }
+
+    .features {
+        grid-template-columns: 1fr;
+    }
+
+    main {
+        padding: 1rem;
+    }
+
+    header .logo {
+        width: 32px;
+        height: 32px;
+    }
+
+    .footer-links {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    
+    footer a {
+        margin: 0;
+    }
+}
+
+/* 视频部分样式 */
+.video-section {
+    margin: 1.5rem 0;
+    text-align: center;
+    padding: 2rem;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+}
+
+.video-section h2 {
+    color: #1a73e8;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+
+.video-container {
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+}
+
+.video-container video {
+    width: 100%;
+    display: block;
+    border-radius: 8px;
+}
+
+/* 响应式调整 */
+@media (max-width: 768px) {
+    .video-section {
+        padding: 1rem;
+    }
+    
+    .video-section h2 {
+        font-size: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+}
+
+/* 在较大屏幕上使用更大的宽度 */
+@media (min-width: 1400px) {
+    .video-container {
+        max-width: 1200px;
+    }
+}
+
+/* 导航链接样式 */
+.header-nav {
+    margin-top: 1rem;
+}
+
+.doc-link {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    border-radius: 20px;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+}
+
+.doc-link:hover {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: white;
+    transform: translateY(-2px);
+}
+
+/* 下载区域样式 */
+.download-section {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* 按钮之间的间距 */
+}
+
+/* Call to Action 区域样式 */
+.cta {
+    text-align: center;
+}
+
+.cta .price {
+    font-weight: 600;
+    font-size: 1.2rem;
+    margin: 1rem 0;
+}
+
+.cta .download-section {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* Mac App Store 按钮样式 */
+.mac-store-button {
+    display: inline-flex;
+    align-items: center;
+    background: #000;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: all 0.2s ease;
+    border: none;
+    gap: 12px;
+    min-width: 240px;
+    justify-content: center;
+}
+
+.mac-store-button:hover {
+    background: #333;
+}
+
+.mac-store-button svg {
+    height: 28px;
+    width: auto;
+    fill: currentColor;
+}
+
+.mac-store-button .text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 1.2;
+}
+
+.mac-store-button .small-text {
+    font-size: 0.8rem;
+    opacity: 0.8;
+}
+
+.mac-store-button .big-text {
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+/* 响应式调整 */
+@media (max-width: 768px) {
+    .mac-store-button {
+        padding: 10px 20px;
+        min-width: 220px;
+    }
+    
+    .mac-store-button svg {
+        height: 24px;
+    }
+    
+    .mac-store-button .small-text {
+        font-size: 0.75rem;
+    }
+    
+    .mac-store-button .big-text {
+        font-size: 1.1rem;
+    }
+}
+
+/* User Guide 按钮样式 */
+.requirements .cta-button {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    padding: 12px 24px;
+    background: #1a73e8;
+    color: white;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: all 0.2s ease;
+}
+
+.requirements .cta-button:hover {
+    background: #1557b0;
+}
+
+.requirements .download-content {
+    max-width: 240px;
+    margin: 0 auto;
+}
+
+.mac-store-button.free-trial {
+    background: #4CAF50; /* 绿色背景 */
+}
+
+.mac-store-button.free-trial:hover {
+    background: #45a049;
+}
+
+/* 响应式调整 */
+@media (max-width: 768px) {
+    .download-section {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* Friendly Links */
+.friendly-links {
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    margin: 3rem 0;
+    text-align: center;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+}
+
+.friendly-links h3 {
+    color: #1a73e8;
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+}
+
+.links-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    padding: 0 1rem;
+}
+
+.link-item {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    border-radius: 8px;
+    background: #f8f9fa;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    border: 1px solid #eee;
+}
+
+.link-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    background: #f0f7ff;
+}
+
+.link-title {
+    color: #1a73e8;
+    font-weight: 600;
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+}
+
+.link-desc {
+    color: #666;
+    font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+    .friendly-links {
+        padding: 1.5rem 1rem;
+    }
+
+    .links-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* 语言选择器样式 */
+.language-selector {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    z-index: 1000;
+}
+
+.language-selector select {
+    padding: 0.5rem 2rem 0.5rem 0.8rem; /* 增加右侧内边距，为下拉箭头留出空间 */
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+    font-size: 0.9rem;
+    cursor: pointer;
+    outline: none;
+    appearance: none; /* 移除默认的下拉箭头 */
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: right 0.5rem center;
+    background-size: 1em;
+    min-width: 120px; /* 设置最小宽度 */
+}
+
+.language-selector select:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.language-selector select option {
+    background-color: white;
+    color: #333;
+    padding: 0.5rem;
+}
+
+/* 移动端适配 */
+@media (max-width: 768px) {
+    .language-selector {
+        top: 0.5rem;
+        right: 0.5rem;
+    }
+    
+    .language-selector select {
+        padding: 0.4rem 1.8rem 0.4rem 0.6rem;
+        font-size: 0.85rem;
+        min-width: 100px;
+    }
+}
