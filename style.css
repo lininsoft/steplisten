@@ -430,7 +430,7 @@ footer a:hover {
     transition: all 0.2s ease;
     border: none;
     gap: 12px;
-    min-width: 240px;
+    min-width: 220px;
     justify-content: center;
 }
 
@@ -479,6 +479,10 @@ footer a:hover {
     .mac-store-button .big-text {
         font-size: 1.1rem;
     }
+
+    .product-hunt-button {
+        min-width: 220px;
+    }
 }
 
 /* User Guide 按钮样式 */
@@ -500,7 +504,7 @@ footer a:hover {
 }
 
 .requirements .download-content {
-    max-width: 240px;
+    max-width: 220px;
     margin: 0 auto;
 }
 
@@ -637,14 +641,14 @@ footer a:hover {
     align-items: center;
     background: white;
     color: #FF6154;
-    padding: 7.5px 16px;
+    padding: 7.5px 20px;
     border-radius: 8px;
     text-decoration: none;
     font-size: 1.1rem;
     transition: all 0.2s ease;
     border: 1px solid #FF6154;
     gap: 8px;
-    min-width: 240px;
+    min-width: 220px;
 }
 
 .product-hunt-button:hover {
@@ -652,8 +656,8 @@ footer a:hover {
 }
 
 .ph-logo {
-    width: 28px;
-    height: 28px;
+    width: 26px;
+    height: 26px;
     background: #FF6154;
     border-radius: 50%;
     display: flex;
@@ -699,12 +703,6 @@ footer a:hover {
     font-size: 12px;
     font-weight: 600;
     margin-left: auto;
-}
-
-@media (max-width: 768px) {
-    .product-hunt-button {
-        min-width: 220px;
-    }
 }
 
 .product-hunt-link {
