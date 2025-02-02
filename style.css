@@ -423,7 +423,7 @@ footer a:hover {
     align-items: center;
     background: #000;
     color: white;
-    padding: 12px 24px;
+    padding: 5px 24px;
     border-radius: 8px;
     text-decoration: none;
     font-size: 1.1rem;
@@ -464,7 +464,7 @@ footer a:hover {
 /* 响应式调整 */
 @media (max-width: 768px) {
     .mac-store-button {
-        padding: 10px 20px;
+        padding: 5px 20px;
         min-width: 220px;
     }
     
