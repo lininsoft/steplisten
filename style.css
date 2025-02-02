@@ -630,3 +630,89 @@ footer a:hover {
         min-width: 100px;
     }
 }
+
+/* Product Hunt Button */
+.product-hunt-button {
+    display: inline-flex;
+    align-items: center;
+    background: white;
+    color: #FF6154;
+    padding: 7.5px 16px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: all 0.2s ease;
+    border: 1px solid #FF6154;
+    gap: 8px;
+    min-width: 240px;
+}
+
+.product-hunt-button:hover {
+    background: #fff8f7;
+}
+
+.ph-logo {
+    width: 28px;
+    height: 28px;
+    background: #FF6154;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: 700;
+    font-size: 20px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+.product-hunt-button .text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    line-height: 1.2;
+    flex-grow: 1;
+}
+
+.product-hunt-button .small-text {
+    font-size: 9px;
+    font-weight: bold;
+    color: #FF6154;
+    font-family:Helvetica-Bold, Helvetica;
+}
+
+.product-hunt-button .big-text {
+    font-size: 18px;
+    font-weight: bold;
+    color: #FF6154;
+    font-family:Helvetica-Bold, Helvetica; 
+}
+
+.product-hunt-button .badge {
+    background: white;
+    color: #FF6154;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    font-weight: 600;
+    margin-left: auto;
+}
+
+@media (max-width: 768px) {
+    .product-hunt-button {
+        min-width: 220px;
+    }
+}
+
+.product-hunt-link {
+    display: inline-block;
+    transition: all 0.2s ease;
+}
+
+.product-hunt-link:hover {
+    transform: translateY(-2px);
+    filter: drop-shadow(0 4px 8px rgba(0,0,0,0.1));
+}
