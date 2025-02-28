@@ -71,6 +71,7 @@ function updateLinks() {
             link.textContent.includes('ユーザーガイド') ||
             link.textContent.includes('사용자 가이드') ||
             link.textContent.includes('Guía del Usuario') ||
+            link.textContent.includes('Руководство пользователя')||
             link.textContent.includes('Benutzerhandbuch') ||
             link.textContent.includes("Guide d'utilisation") ||
             link.textContent.includes('คู่มือช่วยเหลือ') ||
