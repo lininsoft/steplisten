@@ -5,6 +5,46 @@
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
     </url>
+     <url>
+        <loc>https://steplisten.com/index-es.html</loc>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+    </url>
+     <url>
+        <loc>https://steplisten.com/index-de.html</loc>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+    </url>
+     <url>
+        <loc>https://steplisten.com/index-fr.html</loc>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+    </url>
+     <url>
+        <loc>https://steplisten.com/index-ja.html</loc>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+    </url>
+     <url>
+        <loc>https://steplisten.com/index-ko.html</loc>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+    </url>
+     <url>
+        <loc>https://steplisten.com/index-ru.html</loc>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+    </url>
+     <url>
+        <loc>https://steplisten.com/index-th.html</loc>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+    </url>
+     <url>
+        <loc>https://steplisten.com/index-vi.html</loc>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+    </url>
     <url>
         <loc>https://steplisten.com/doc/doc.html</loc>
         <changefreq>monthly</changefreq>
@@ -58,6 +98,46 @@
     </url>
     <url>
         <loc>https://steplisten.com/terms/terms.html</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>https://steplisten.com/terms/terms-de.html</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>https://steplisten.com/terms/terms-es.html</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>https://steplisten.com/terms/terms-fr.html</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>https://steplisten.com/terms/terms-ko.html</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>https://steplisten.com/terms/terms-ja.html</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>https://steplisten.com/terms/terms-ru.html</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>https://steplisten.com/terms/terms-th.html</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+    </url>
+        <url>
+        <loc>https://steplisten.com/terms/terms-vi.html</loc>
         <changefreq>monthly</changefreq>
         <priority>0.5</priority>
     </url>
